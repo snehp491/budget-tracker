@@ -1,4 +1,5 @@
-const indexedDB = window.indexedDB || window.mozIndexedDB;
+// https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
+const indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
 let db;
 const requestObject = indexedDB.open('budget-tracker', 1);
 
